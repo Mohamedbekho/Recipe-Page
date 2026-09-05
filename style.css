@@ -1,0 +1,206 @@
+/* Start Global Rules  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --font-size: 16px;
+}
+
+body {
+    background-color: var(--Stone-100);
+    font-family: "Outfit", sans-serif;
+    color: var(--Stone-600);
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: "Young Serif", serif;
+}
+
+/* End Global Rules  */
+
+/* Start Menu  */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; /* Allows scrolling on smaller screens */
+}
+
+.container .card {
+    background-color: var(--White);
+    width: 100%;
+    max-width: 736px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Start Header Section  */
+.container .card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.container .card h1 {
+    color: var(--Stone-900);
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.container .card .heading-text {
+    color: var(--Stone-600);
+    font-size: var(--font-size);
+    margin-bottom: 30px;
+}
+/* End Header Section  */
+
+/* Start Preparation Section  */
+.container .card .prep-time {
+    background-color: var(--Rose-50);
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.container .card .prep-time h4 {
+    color: var(--Rose-800);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.container .card .prep-time ul {
+    padding-left: 24px;
+}
+
+.container .card .prep-time ul li {
+    margin-bottom: 8px;
+    padding-left: 16px;
+    color: var(--Stone-600);
+}
+
+.container .card .prep-time ul li::marker {
+    color: var(--Rose-800);
+}
+
+.container .card .prep-time ul li span {
+    color: var(--Stone-900);
+    font-weight: 700;
+}
+/* End Preparation Section  */
+
+/* Start Ingredients Section  */
+.container .card .ingredients {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.container .card .ingredients h3 {
+    color: var(--Brown-800);
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.container .card .ingredients ul {
+    padding-left: 24px;
+}
+
+.container .card .ingredients ul li {
+    color: var(--Stone-600);
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+
+.container .card .ingredients ul li::marker {
+    color: var(--Brown-800);
+}
+/* End Ingredients Section  */
+
+/* Start Instructions Section  */
+.container .card .instructions {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.container .card .instructions h3 {
+    color: var(--Brown-800);
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.container .card .instructions ol {
+    padding-left: 24px;
+}
+
+.container .card .instructions ol li {
+    color: var(--Stone-600);
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+
+.container .card .instructions ol li::marker {
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+
+.container .card .instructions ol li span {
+    color: var(--Stone-900);
+    font-weight: 700;
+}
+/* End Instructions Section  */
+
+/* Start Nutrition Section  */
+.container .card .nutrition h3 {
+    color: var(--Brown-800);
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.container .card .nutrition p {
+    margin-bottom: 16px;
+}
+
+.container .card .nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container .card .nutrition tr {
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.container .card .nutrition tr:last-child {
+    border-bottom: none;
+}
+
+.container .card .nutrition td {
+    padding: 12px 32px;
+    color: var(--Stone-600);
+}
+
+.container .card .nutrition td:first-child {
+    padding-left: 32px;
+}
+
+.container .card .nutrition td.value {
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+/* End Nutrition Section  */
